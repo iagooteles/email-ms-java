@@ -32,14 +32,14 @@ Este microserviço consome mensagens enviadas por outros serviços (como o de us
 - O status do envio (SENT ou ERROR) é armazenado no banco de dados PostgreSQL.
 
 ## 📁 Estrutura do Projeto
-`configs`: Configurações do RabbitMQ;
-`consumers`: ouvinte da fila do RabbitMQ (EmailConsumer).
-`controllers`: (opcional neste serviço, não expõe endpoints)
-`dtos`: objeto de dados transferido entre microsserviços.
-`models`: entidade EmailModel que representa os dados persistidos.
-`repository`: interface de persistência com o banco (EmailRepository).
-`services`: lógica de envio de e-mails (EmailService).
-`enums`: ENUMS de status de envio (SENT, ERROR).
+`configs`: Configurações do RabbitMQ.  
+`consumers`: ouvinte da fila do RabbitMQ (EmailConsumer).  
+`controllers`: (opcional neste serviço, não expõe endpoints)  
+`dtos`: objeto de dados transferido entre microsserviços.  
+`models`: entidade EmailModel que representa os dados persistidos.  
+`repository`: interface de persistência com o banco (EmailRepository).  
+`services`: lógica de envio de e-mails (EmailService).  
+`enums`: ENUMS de status de envio (SENT, ERROR).  
 
 ## 🐳 Como Rodar Localmente
 Pré-requisitos: Docker, Java 17+, RabbitMQ ativo
